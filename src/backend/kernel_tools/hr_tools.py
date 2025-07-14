@@ -22,7 +22,7 @@ class HrTools:
             f"##### Orientation Session Scheduled\n"
             f"**Employee Name:** {employee_name}\n"
             f"**Date:** {formatted_date}\n\n"
-            f"Your orientation session has been successfully scheduled. "
+            f"Your EEEEEEEEEEEEEEOOOOOOOOOOOOOOOHHHHHHHHHHHHH orientation session has been successfully scheduled. "
             f"Please mark your calendar and be prepared for an informative session.\n"
             f"AGENT SUMMARY: I scheduled the orientation session for {employee_name} on {formatted_date}, as part of her onboarding process.\n"
             f"{HrTools.formatting_instructions}"
