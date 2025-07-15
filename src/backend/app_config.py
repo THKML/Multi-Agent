@@ -36,6 +36,7 @@ class AppConfig:
             "AZURE_OPENAI_API_VERSION", "2024-11-20"
         )
         self.AZURE_OPENAI_ENDPOINT = self._get_required("AZURE_OPENAI_ENDPOINT")
+        self.AZURE_OPENAI_API_KEY = self._get_optional("AZURE_OPENAI_API_KEY")
         self.AZURE_OPENAI_SCOPES = [
             f"{self._get_optional('AZURE_OPENAI_SCOPE', 'https://cognitiveservices.azure.com/.default')}"
         ]

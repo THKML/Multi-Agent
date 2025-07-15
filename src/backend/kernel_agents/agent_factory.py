@@ -19,8 +19,10 @@ from kernel_agents.marketing_agent import MarketingAgent
 from kernel_agents.planner_agent import PlannerAgent  # Add PlannerAgent import
 from kernel_agents.procurement_agent import ProcurementAgent
 from kernel_agents.product_agent import ProductAgent
+from kernel_agents.agent_legal import LegalAgent
 from kernel_agents.tech_support_agent import TechSupportAgent
 from models.messages_kernel import AgentType, PlannerResponsePlan
+
 # pylint:disable=E0611
 from semantic_kernel.agents.azure_ai.azure_ai_agent import AzureAIAgent
 
@@ -40,6 +42,7 @@ class AgentFactory:
         AgentType.GENERIC: GenericAgent,
         AgentType.HUMAN: HumanAgent,
         AgentType.PLANNER: PlannerAgent,
+        AgentType.LEGAL: LegalAgent, 
         AgentType.GROUP_CHAT_MANAGER: GroupChatManager,  # Add GroupChatManager
     }
 
@@ -53,6 +56,7 @@ class AgentFactory:
         AgentType.GENERIC: AgentType.GENERIC.value,
         AgentType.HUMAN: AgentType.HUMAN.value,
         AgentType.PLANNER: AgentType.PLANNER.value,
+        AgentType.LEGAL: AgentType.LEGAL.value,
         AgentType.GROUP_CHAT_MANAGER: AgentType.GROUP_CHAT_MANAGER.value,
     }
 
@@ -66,6 +70,7 @@ class AgentFactory:
         AgentType.GENERIC: GenericAgent.default_system_message(),
         AgentType.HUMAN: HumanAgent.default_system_message(),
         AgentType.PLANNER: PlannerAgent.default_system_message(),
+        AgentType.LEGAL: LegalAgent.default_system_message(),
         AgentType.GROUP_CHAT_MANAGER: GroupChatManager.default_system_message(),
     }
 
